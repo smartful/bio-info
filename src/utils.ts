@@ -1,4 +1,4 @@
-export const adnToArn = (adn) => {
+export const adnToArn = (adn: string) => {
   const adnArray = adn.split("");
   const arnArray = adnArray.map((nucleotide) => {
     switch (nucleotide) {

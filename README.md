@@ -12,6 +12,10 @@ L'application a été faite avec :
 L'installation nécessite de réaliser la comment `npm install`.
 Attention, il se peut que commande ne fonctionne pas comme voulu si la version de Node JS et NPM ne sont pas les même qu'indiqué si dessus.
 
+## Utilisation
+
+Pour lancer l'application il faut utiliser la commande `npm run start`.
+
 ## Tests unitaire
 
 Pour lancer l'ensemble des tests unitaires, il faut réaliser la commande `npm run test`.

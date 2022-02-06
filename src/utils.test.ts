@@ -1,4 +1,4 @@
-import { adnToArn } from "./utils.js";
+import { adnToArn } from "./utils";
 
 describe("adnToArn", () => {
   test("should match properly", () => {

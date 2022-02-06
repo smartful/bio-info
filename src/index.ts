@@ -1,4 +1,4 @@
-import { adnToArn } from "./utils.js";
+import { adnToArn } from "./utils";
 
 const adn = "attaaaggtttataccttcccaggtaacaaaccaaccaactttcgatctcttgtagatct";
 const arn = adnToArn(adn);
