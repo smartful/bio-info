@@ -1,19 +1,25 @@
-export const adnToArn = (adn: string) => {
-  const adnArray = adn.split("");
-  const arnArray = adnArray.map((nucleotide) => {
-    switch (nucleotide) {
-      case "a":
-        return "u";
-      case "t":
-        return "a";
-      case "g":
-        return "c";
-      case "c":
-        return "g";
+import { RNA_START, RNA_STOP } from "./constants";
+
+export const dnaToRna = (dna: string): string => {
+  const dnaArray = dna.split("");
+  const rnaArray = dnaArray.map((nucleotide) => {
+    switch (nucleotide.toUpperCase()) {
+      case "A":
+        return "U";
+      case "T":
+        return "A";
+      case "G":
+        return "C";
+      case "C":
+        return "G";
       default:
         return;
     }
   });
-  const arn = arnArray.join("");
-  return arn;
+  const rna = rnaArray.join("");
+  return rna;
+};
+
+export const getCodingRna = (rna: string): string[] => {
+  return [""];
 };

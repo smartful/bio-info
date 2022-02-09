@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const utils_1 = require("./utils");
-const adn = "attaaaggtttataccttcccaggtaacaaaccaaccaactttcgatctcttgtagatct";
-const arn = (0, utils_1.adnToArn)(adn);
+const sars_cov2_wuhan_1 = require("./data/sars_cov2_wuhan");
+const rna = (0, utils_1.dnaToRna)(sars_cov2_wuhan_1.dna);
 console.log("--- TESTS ---");
-console.log("Longueur ADN : ", adn.length);
-console.log("Longueur ARN : ", arn.length);
-console.log("--- AFFICHAGE ---");
-console.log("ADN : ", adn);
-console.log("ARN : ", arn);
+console.log("Longueur ADN : ", sars_cov2_wuhan_1.dna.length);
+console.log("Longueur ARN : ", rna.length);
+console.log("--- AFFICHAGE (10 premieres nucléotides) ---");
+console.log("ADN : ", sars_cov2_wuhan_1.dna.substring(0, 10));
+console.log("ARN : ", rna.substring(0, 10));

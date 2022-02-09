@@ -1,15 +1,22 @@
-import { adnToArn } from "./utils";
+import { dnaToRna, getCodingRna } from "./utils";
 
-describe("adnToArn", () => {
+describe("dnaToRna", () => {
   test("should match properly", () => {
-    expect(adnToArn("atcg")).toBe("uagc");
+    expect(dnaToRna("atcg")).toBe("UAGC");
   });
 
   test("should manage incorrect nucleotide", () => {
-    expect(adnToArn("atocg")).toBe("uagc");
+    expect(dnaToRna("atocg")).toBe("UAGC");
   });
 
   test("should return empty arn if adn is empty", () => {
-    expect(adnToArn("")).toBe("");
+    expect(dnaToRna("")).toBe("");
+  });
+});
+
+describe("getCodingRna", () => {
+  test("should return the appropriate coding rna", () => {
+    const rna = "";
+    expect(getCodingRna(rna)).toContain("");
   });
 });

@@ -1,11 +1,11 @@
-import { adnToArn } from "./utils";
+import { dnaToRna } from "./utils";
+import { dna } from "./data/sars_cov2_wuhan";
 
-const adn = "attaaaggtttataccttcccaggtaacaaaccaaccaactttcgatctcttgtagatct";
-const arn = adnToArn(adn);
+const rna = dnaToRna(dna);
 
 console.log("--- TESTS ---");
-console.log("Longueur ADN : ", adn.length);
-console.log("Longueur ARN : ", arn.length);
-console.log("--- AFFICHAGE ---");
-console.log("ADN : ", adn);
-console.log("ARN : ", arn);
+console.log("Longueur ADN : ", dna.length);
+console.log("Longueur ARN : ", rna.length);
+console.log("--- AFFICHAGE (10 premieres nucléotides) ---");
+console.log("ADN : ", dna.substring(0, 10));
+console.log("ARN : ", rna.substring(0, 10));
