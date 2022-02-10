@@ -16,7 +16,10 @@ describe("dnaToRna", () => {
 
 describe("getCodingRna", () => {
   test("should return the appropriate coding rna", () => {
-    const rna = "";
-    expect(getCodingRna(rna)).toContain("");
+    const rna =
+      " UAAUUUCCAAAUAUGGAAGGGUCCAUUGUUUGGUUGGUUGAAAGCUAGAGAACAUCUAGACAAGAGAUUU";
+    const exons = ["GUUGAAAGC"];
+
+    expect(getCodingRna(rna)).toEqual(exons);
   });
 });
