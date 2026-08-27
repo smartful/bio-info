@@ -1,6 +1,6 @@
 {
   "name": "bioinfo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.17.0",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-typescript": "^7.16.7",
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
+    "@babel/preset-typescript": "^8.0.1",
     "@types/jest": "^27.4.0",
-    "babel-jest": "^27.4.6",
-    "jest": "^27.4.7",
-    "typescript": "^4.5.5"
+    "babel-jest": "^30.4.1",
+    "jest": "^30.4.2",
+    "typescript": "^7.0.2"
   }
 }
